@@ -1,0 +1,21 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int x;
+	cout<<"\twelecome"<<endl;
+	cout<<"enter continue:";//初始界面	
+getch();//是否继续执行	
+system("cls");//清屏	
+cout<<"if 1"<<endl;
+	cout<<"if 2"<<endl;
+	cout<<"please choice :";
+		cin>>x;
+	switch(x)
+	{
+		case 1:cout<<"ss";break;
+		case 2:cout<<"aa";break;
+	}
+	return 0;
+}
