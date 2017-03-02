@@ -1,0 +1,53 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class Student
+{
+public:
+	Student(char *name1,int idd=0);
+	~Student();
+	void Add();
+	void Cut();
+	void Amend();
+	void Find();
+	void Display();
+private:
+	char *name;
+	int id;
+	int grade;
+};
+Student::Student(char *name1,int idd)
+{
+	name=new char[strlen(name1)+1];
+	strcpy(name,name1);
+	id=idd;
+}
+void Student::Add()
+{
+	cin>>name>>id>>grade;
+}
+
+
+
+int main()
+{
+	int x;
+	cout<<"\twelecome"<<endl;
+	cout<<"enter continue:";
+	getch();
+	system("cls");
+	cout<<"if 1"<<endl;
+	cout<<"if 2"<<endl;
+	cout<<"please choice :";
+		cin>>x;
+	switch(x)
+	{
+		case 1:cout<<"ss";break;
+		case 2:cout<<"aa";break;
+		case 3:cout<<"aa";break;
+		case 4:cout<<"aa";break;
+		case 5:cout<<"aa";break;
+		case 6:cout<<"aa";break;
+	}
+	return 0;
+}
